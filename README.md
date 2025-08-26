@@ -78,19 +78,8 @@ id,purchaseValue
 
 ## ⚡ How to Run
 
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/your-username/kaggle-engage2.git
-   cd kaggle-engage2
-   ```
-2. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the notebook to train models and generate predictions.
-4. Save predictions in CSV → submit on Kaggle.
+1. Run the notebook to train models and generate predictions on kaggle.
+2. Save predictions in CSV → submit on Kaggle.
 
 ---
 
@@ -98,10 +87,8 @@ id,purchaseValue
 
 ```
 ├── notebooks/         # Jupyter notebooks (exploration + modeling)
-├── src/               # Python scripts (preprocessing, training, utils)
 ├── data/              # (Optional) Local copy of dataset
 ├── outputs/           # Submission files, figures, logs
-├── requirements.txt   # Dependencies
 └── README.md          # Project documentation
 ```
 
