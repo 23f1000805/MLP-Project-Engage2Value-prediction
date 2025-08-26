@@ -1,0 +1,1047 @@
+9.2s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+9.2s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+9.2s 3 0.00s - to python to disable frozen modules.
+9.2s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+10.2s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+10.2s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+10.2s 7 0.00s - to python to disable frozen modules.
+10.2s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+15.9s 9 /kaggle/input/engage-2-value-from-clicks-to-conversions/sample_submission.csv
+15.9s 10 /kaggle/input/engage-2-value-from-clicks-to-conversions/train_data.csv
+15.9s 11 /kaggle/input/engage-2-value-from-clicks-to-conversions/test_data.csv
+18.7s 12 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1458: RuntimeWarning: invalid value encountered in greater
+18.7s 13 has_large_values = (abs_vals > 1e6).any()
+18.7s 14 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1459: RuntimeWarning: invalid value encountered in less
+18.7s 15 has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
+18.7s 16 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1459: RuntimeWarning: invalid value encountered in greater
+18.7s 17 has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
+18.7s 18 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1458: RuntimeWarning: invalid value encountered in greater
+18.7s 19 has_large_values = (abs_vals > 1e6).any()
+18.7s 20 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1459: RuntimeWarning: invalid value encountered in less
+18.7s 21 has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
+18.7s 22 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1459: RuntimeWarning: invalid value encountered in greater
+18.7s 23 has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
+18.9s 24 <class 'pandas.core.frame.DataFrame'>
+18.9s 25 RangeIndex: 116023 entries, 0 to 116022
+18.9s 26 Data columns (total 52 columns):
+18.9s 27 #   Column                                        Non-Null Count   Dtype
+18.9s 28 ---  ------                                        --------------   -----
+18.9s 29 0   trafficSource.isTrueDirect                    42890 non-null   object
+18.9s 30 1   purchaseValue                                 116023 non-null  float64
+18.9s 31 2   browser                                       116023 non-null  object
+18.9s 32 3   device.screenResolution                       116023 non-null  object
+18.9s 33 4   trafficSource.adContent                       2963 non-null    object
+18.9s 34 5   trafficSource.keyword                         44162 non-null   object
+18.9s 35 6   screenSize                                    116023 non-null  object
+18.9s 36 7   geoCluster                                    116023 non-null  object
+18.9s 37 8   trafficSource.adwordsClickInfo.slot           4281 non-null    object
+18.9s 38 9   device.mobileDeviceBranding                   116023 non-null  object
+18.9s 39 10  device.mobileInputSelector                    116023 non-null  object
+18.9s 40 11  userId                                        116023 non-null  int64
+18.9s 41 12  trafficSource.campaign                        116023 non-null  object
+18.9s 42 13  device.mobileDeviceMarketingName              116023 non-null  object
+18.9s 43 14  geoNetwork.networkDomain                      116023 non-null  object
+18.9s 44 15  gclIdPresent                                  116023 non-null  int64
+18.9s 45 16  device.operatingSystemVersion                 116023 non-null  object
+18.9s 46 17  sessionNumber                                 116023 non-null  int64
+18.9s 47 18  device.flashVersion                           116023 non-null  object
+18.9s 48 19  geoNetwork.region                             116023 non-null  object
+18.9s 49 20  trafficSource                                 116023 non-null  object
+18.9s 50 21  totals.visits                                 116023 non-null  int64
+18.9s 51 22  geoNetwork.networkLocation                    116023 non-null  object
+18.9s 52 23  sessionId                                     116023 non-null  int64
+18.9s 53 24  os                                            116023 non-null  object
+18.9s 54 25  geoNetwork.subContinent                       116023 non-null  object
+18.9s 55 26  trafficSource.medium                          116023 non-null  object
+18.9s 56 27  trafficSource.adwordsClickInfo.isVideoAd      4281 non-null    object
+18.9s 57 28  browserMajor                                  116023 non-null  object
+18.9s 58 29  locationCountry                               116023 non-null  object
+18.9s 59 30  device.browserSize                            116023 non-null  object
+18.9s 60 31  trafficSource.adwordsClickInfo.adNetworkType  4281 non-null    object
+18.9s 61 32  socialEngagementType                          116023 non-null  object
+18.9s 62 33  geoNetwork.city                               116023 non-null  object
+18.9s 63 34  trafficSource.adwordsClickInfo.page           4281 non-null    float64
+18.9s 64 35  geoNetwork.metro                              116023 non-null  object
+18.9s 65 36  pageViews                                     116015 non-null  float64
+18.9s 66 37  locationZone                                  116023 non-null  int64
+18.9s 67 38  device.mobileDeviceModel                      116023 non-null  object
+18.9s 68 39  trafficSource.referralPath                    42714 non-null   object
+18.9s 69 40  totals.bounces                                47148 non-null   float64
+18.9s 70 41  date                                          116023 non-null  int64
+18.9s 71 42  device.language                               116023 non-null  object
+18.9s 72 43  deviceType                                    116023 non-null  object
+18.9s 73 44  userChannel                                   116023 non-null  object
+18.9s 74 45  device.browserVersion                         116023 non-null  object
+18.9s 75 46  totalHits                                     116023 non-null  int64
+18.9s 76 47  device.screenColors                           116023 non-null  object
+18.9s 77 48  sessionStart                                  116023 non-null  int64
+18.9s 78 49  geoNetwork.continent                          116023 non-null  object
+18.9s 79 50  device.isMobile                               116023 non-null  bool
+18.9s 80 51  new_visits                                    80518 non-null   float64
+18.9s 81 dtypes: bool(1), float64(5), int64(9), object(37)
+18.9s 82 memory usage: 45.3+ MB
+18.9s 83 None
+19.0s 84 purchaseValue         userId   gclIdPresent  sessionNumber  \
+19.0s 85 count   1.160230e+05  116023.000000  116023.000000  116023.000000
+19.0s 86 mean    2.656393e+07   61094.356231       0.037019       2.691311
+19.0s 87 std     2.051825e+08   35240.756859       0.188808      10.451613
+19.0s 88 min     0.000000e+00       0.000000       0.000000       1.000000
+19.0s 89 25%     0.000000e+00   30603.500000       0.000000       1.000000
+19.0s 90 50%     0.000000e+00   61014.000000       0.000000       1.000000
+19.0s 91 75%     0.000000e+00   91616.500000       0.000000       2.000000
+19.0s 92 max     2.312950e+10  122276.000000       1.000000     447.000000
+19.0s 93 
+19.0s 94 totals.visits     sessionId  trafficSource.adwordsClickInfo.page  \
+19.0s 95 count       116023.0  1.160230e+05                          4281.000000
+19.0s 96 mean             1.0  1.493429e+09                             1.019622
+19.0s 97 std              0.0  1.528798e+07                             0.174517
+19.0s 98 min              1.0  1.470035e+09                             1.000000
+19.0s 99 25%              1.0  1.480066e+09                             1.000000
+19.0s 100 50%              1.0  1.491646e+09                             1.000000
+19.0s 101 75%              1.0  1.505079e+09                             1.000000
+19.0s 102 max              1.0  1.525157e+09                             5.000000
+19.0s 103 
+19.0s 104 pageViews  locationZone  totals.bounces          date  \
+19.0s 105 count  116015.000000      116023.0         47148.0  1.160230e+05
+19.0s 106 mean        8.412352           8.0             1.0  2.016860e+07
+19.0s 107 std        14.344937           0.0             0.0  6.182322e+03
+19.0s 108 min         1.000000           8.0             1.0  2.016080e+07
+19.0s 109 25%         1.000000           8.0             1.0  2.016112e+07
+19.0s 110 50%         2.000000           8.0             1.0  2.017041e+07
+19.0s 111 75%        10.000000           8.0             1.0  2.017091e+07
+19.0s 112 max       469.000000           8.0             1.0  2.018043e+07
+19.0s 113 
+19.0s 114 totalHits  sessionStart  new_visits
+19.0s 115 count  116023.000000  1.160230e+05     80518.0
+19.0s 116 mean       10.607371  1.493429e+09         1.0
+19.0s 117 std        19.629576  1.528798e+07         0.0
+19.0s 118 min         1.000000  1.470035e+09         1.0
+19.0s 119 25%         1.000000  1.480066e+09         1.0
+19.0s 120 50%         2.000000  1.491646e+09         1.0
+19.0s 121 75%        12.000000  1.505079e+09         1.0
+19.0s 122 max       500.000000  1.525157e+09         1.0
+19.3s 123 236
+19.9s 124 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1458: RuntimeWarning: invalid value encountered in greater
+19.9s 125 has_large_values = (abs_vals > 1e6).any()
+19.9s 126 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1459: RuntimeWarning: invalid value encountered in less
+19.9s 127 has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
+19.9s 128 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1459: RuntimeWarning: invalid value encountered in greater
+19.9s 129 has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
+19.9s 130 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1458: RuntimeWarning: invalid value encountered in greater
+19.9s 131 has_large_values = (abs_vals > 1e6).any()
+19.9s 132 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1459: RuntimeWarning: invalid value encountered in less
+19.9s 133 has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
+19.9s 134 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1459: RuntimeWarning: invalid value encountered in greater
+19.9s 135 has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
+22.6s 136 missing values count:
+22.6s 137 trafficSource.isTrueDirect                       73133
+22.6s 138 purchaseValue                                        0
+22.6s 139 browser                                              0
+22.6s 140 device.screenResolution                              0
+22.6s 141 trafficSource.adContent                         113060
+22.6s 142 trafficSource.keyword                            71861
+22.6s 143 screenSize                                           0
+22.6s 144 geoCluster                                           0
+22.6s 145 trafficSource.adwordsClickInfo.slot             111742
+22.6s 146 device.mobileDeviceBranding                          0
+22.6s 147 device.mobileInputSelector                           0
+22.6s 148 userId                                               0
+22.6s 149 trafficSource.campaign                               0
+22.6s 150 device.mobileDeviceMarketingName                     0
+22.6s 151 geoNetwork.networkDomain                             0
+22.6s 152 gclIdPresent                                         0
+22.6s 153 device.operatingSystemVersion                        0
+22.6s 154 sessionNumber                                        0
+22.6s 155 device.flashVersion                                  0
+22.6s 156 geoNetwork.region                                    0
+22.6s 157 trafficSource                                        0
+22.6s 158 totals.visits                                        0
+22.6s 159 geoNetwork.networkLocation                           0
+22.6s 160 sessionId                                            0
+22.6s 161 os                                                   0
+22.6s 162 geoNetwork.subContinent                              0
+22.6s 163 trafficSource.medium                                 0
+22.6s 164 trafficSource.adwordsClickInfo.isVideoAd        111742
+22.6s 165 browserMajor                                         0
+22.6s 166 locationCountry                                      0
+22.6s 167 device.browserSize                                   0
+22.6s 168 trafficSource.adwordsClickInfo.adNetworkType    111742
+22.6s 169 socialEngagementType                                 0
+22.6s 170 geoNetwork.city                                      0
+22.6s 171 trafficSource.adwordsClickInfo.page             111742
+22.6s 172 geoNetwork.metro                                     0
+22.6s 173 pageViews                                            8
+22.6s 174 locationZone                                         0
+22.6s 175 device.mobileDeviceModel                             0
+22.6s 176 trafficSource.referralPath                       73309
+22.6s 177 totals.bounces                                   68875
+22.6s 178 date                                                 0
+22.6s 179 device.language                                      0
+22.6s 180 deviceType                                           0
+22.6s 181 userChannel                                          0
+22.6s 182 device.browserVersion                                0
+22.6s 183 totalHits                                            0
+22.6s 184 device.screenColors                                  0
+22.6s 185 sessionStart                                         0
+22.6s 186 geoNetwork.continent                                 0
+22.6s 187 device.isMobile                                      0
+22.6s 188 new_visits                                       35505
+22.6s 189 dtype: int64
+22.7s 190 Missing values %:
+22.7s 191 trafficSource.adContent                         97.446196
+22.7s 192 trafficSource.adwordsClickInfo.isVideoAd        96.310214
+22.7s 193 trafficSource.adwordsClickInfo.page             96.310214
+22.7s 194 trafficSource.adwordsClickInfo.adNetworkType    96.310214
+22.7s 195 trafficSource.adwordsClickInfo.slot             96.310214
+22.7s 196 trafficSource.referralPath                      63.184886
+22.7s 197 trafficSource.isTrueDirect                      63.033192
+22.7s 198 trafficSource.keyword                           61.936857
+22.7s 199 totals.bounces                                  59.363230
+22.7s 200 new_visits                                      30.601691
+22.8s 201 pageViews                                        0.006895
+22.8s 202 device.mobileInputSelector                       0.000000
+22.8s 203 date                                             0.000000
+22.8s 204 geoNetwork.city                                  0.000000
+22.8s 205 screenSize                                       0.000000
+22.8s 206 geoNetwork.metro                                 0.000000
+22.8s 207 locationZone                                     0.000000
+22.8s 208 device.mobileDeviceModel                         0.000000
+22.8s 209 device.screenResolution                          0.000000
+22.8s 210 browser                                          0.000000
+22.8s 211 device.language                                  0.000000
+22.8s 212 userId                                           0.000000
+22.8s 213 deviceType                                       0.000000
+22.8s 214 userChannel                                      0.000000
+22.8s 215 device.browserVersion                            0.000000
+22.8s 216 totalHits                                        0.000000
+22.8s 217 device.screenColors                              0.000000
+22.8s 218 sessionStart                                     0.000000
+22.8s 219 geoNetwork.continent                             0.000000
+22.8s 220 device.isMobile                                  0.000000
+22.8s 221 socialEngagementType                             0.000000
+22.8s 222 geoCluster                                       0.000000
+22.8s 223 device.browserSize                               0.000000
+22.8s 224 locationCountry                                  0.000000
+22.8s 225 trafficSource.campaign                           0.000000
+22.8s 226 device.mobileDeviceMarketingName                 0.000000
+22.8s 227 geoNetwork.networkDomain                         0.000000
+22.8s 228 gclIdPresent                                     0.000000
+22.8s 229 device.operatingSystemVersion                    0.000000
+22.8s 230 sessionNumber                                    0.000000
+22.8s 231 device.flashVersion                              0.000000
+22.8s 232 geoNetwork.region                                0.000000
+22.8s 233 trafficSource                                    0.000000
+22.8s 234 totals.visits                                    0.000000
+22.8s 235 geoNetwork.networkLocation                       0.000000
+22.8s 236 sessionId                                        0.000000
+22.8s 237 os                                               0.000000
+22.8s 238 geoNetwork.subContinent                          0.000000
+22.8s 239 purchaseValue                                    0.000000
+22.8s 240 device.mobileDeviceBranding                      0.000000
+22.8s 241 browserMajor                                     0.000000
+22.8s 242 trafficSource.medium                             0.000000
+22.8s 243 dtype: float64
+23.7s 244 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1458: RuntimeWarning: invalid value encountered in greater
+23.7s 245 has_large_values = (abs_vals > 1e6).any()
+23.7s 246 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1459: RuntimeWarning: invalid value encountered in less
+23.7s 247 has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
+23.7s 248 /usr/local/lib/python3.11/dist-packages/pandas/io/formats/format.py:1459: RuntimeWarning: invalid value encountered in greater
+23.7s 249 has_small_values = ((abs_vals < 10 ** (-self.digits)) & (abs_vals > 0)).any()
+23.9s 250 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+23.9s 251 with pd.option_context('mode.use_inf_as_na', True):
+23.9s 252 Processing column: purchaseValue
+24.9s 253 Processing column: userId
+24.9s 254 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+24.9s 255 with pd.option_context('mode.use_inf_as_na', True):
+25.5s 256 Processing column: gclIdPresent
+25.6s 257 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+25.6s 258 with pd.option_context('mode.use_inf_as_na', True):
+26.3s 259 Processing column: sessionNumber
+26.4s 260 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+26.4s 261 with pd.option_context('mode.use_inf_as_na', True):
+27.2s 262 Processing column: totals.visits
+27.3s 263 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+27.3s 264 with pd.option_context('mode.use_inf_as_na', True):
+27.7s 265 Processing column: sessionId
+27.7s 266 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+27.7s 267 with pd.option_context('mode.use_inf_as_na', True):
+28.3s 268 Processing column: trafficSource.adwordsClickInfo.page
+28.4s 269 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+28.4s 270 with pd.option_context('mode.use_inf_as_na', True):
+28.8s 271 Processing column: pageViews
+29.0s 272 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+29.0s 273 with pd.option_context('mode.use_inf_as_na', True):
+29.8s 274 Processing column: locationZone
+29.9s 275 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+29.9s 276 with pd.option_context('mode.use_inf_as_na', True):
+30.2s 277 Processing column: totals.bounces
+30.3s 278 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+30.3s 279 with pd.option_context('mode.use_inf_as_na', True):
+30.6s 280 Processing column: date
+30.6s 281 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+30.6s 282 with pd.option_context('mode.use_inf_as_na', True):
+31.2s 283 Processing column: totalHits
+31.3s 284 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+31.3s 285 with pd.option_context('mode.use_inf_as_na', True):
+32.1s 286 Processing column: sessionStart
+32.2s 287 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+32.2s 288 with pd.option_context('mode.use_inf_as_na', True):
+32.8s 289 Processing column: new_visits
+32.8s 290 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+32.8s 291 with pd.option_context('mode.use_inf_as_na', True):
+33.4s 292 Processing column: trafficSource.isTrueDirect
+33.6s 293 Processing column: browser
+34.1s 294 Processing column: device.screenResolution
+34.1s 295 Processing column: trafficSource.adContent
+35.1s 296 Processing column: trafficSource.keyword
+36.5s 297 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2327 (\N{DEVANAGARI LETTER GA}) missing from current font.
+36.5s 298 plt.tight_layout()
+36.5s 299 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Matplotlib currently does not support Devanagari natively.
+36.5s 300 plt.tight_layout()
+36.5s 301 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2370 (\N{DEVANAGARI VOWEL SIGN UU}) missing from current font.
+36.5s 302 plt.tight_layout()
+36.5s 303 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2354 (\N{DEVANAGARI LETTER LA}) missing from current font.
+36.5s 304 plt.tight_layout()
+36.5s 305 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2350 (\N{DEVANAGARI LETTER MA}) missing from current font.
+36.5s 306 plt.tight_layout()
+36.5s 307 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2375 (\N{DEVANAGARI VOWEL SIGN E}) missing from current font.
+36.5s 308 plt.tight_layout()
+36.5s 309 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2306 (\N{DEVANAGARI SIGN ANUSVARA}) missing from current font.
+36.5s 310 plt.tight_layout()
+36.5s 311 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2360 (\N{DEVANAGARI LETTER SA}) missing from current font.
+36.5s 312 plt.tight_layout()
+36.5s 313 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 21830 (\N{CJK UNIFIED IDEOGRAPH-5546}) missing from current font.
+36.5s 314 plt.tight_layout()
+36.5s 315 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 24215 (\N{CJK UNIFIED IDEOGRAPH-5E97}) missing from current font.
+36.5s 316 plt.tight_layout()
+36.5s 317 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 23448 (\N{CJK UNIFIED IDEOGRAPH-5B98}) missing from current font.
+36.5s 318 plt.tight_layout()
+36.5s 319 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 32593 (\N{CJK UNIFIED IDEOGRAPH-7F51}) missing from current font.
+36.5s 320 plt.tight_layout()
+36.5s 321 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 32209 (\N{CJK UNIFIED IDEOGRAPH-7DD1}) missing from current font.
+36.5s 322 plt.tight_layout()
+36.5s 323 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 35895 (\N{CJK UNIFIED IDEOGRAPH-8C37}) missing from current font.
+36.5s 324 plt.tight_layout()
+36.5s 325 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 20986 (\N{CJK UNIFIED IDEOGRAPH-51FA}) missing from current font.
+36.5s 326 plt.tight_layout()
+36.5s 327 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 20037 (\N{CJK UNIFIED IDEOGRAPH-4E45}) missing from current font.
+36.5s 328 plt.tight_layout()
+36.5s 329 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 29190 (\N{CJK UNIFIED IDEOGRAPH-7206}) missing from current font.
+36.5s 330 plt.tight_layout()
+36.5s 331 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 35946 (\N{CJK UNIFIED IDEOGRAPH-8C6A}) missing from current font.
+36.5s 332 plt.tight_layout()
+36.5s 333 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 21213 (\N{CJK UNIFIED IDEOGRAPH-52DD}) missing from current font.
+36.5s 334 plt.tight_layout()
+36.5s 335 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 24049 (\N{CJK UNIFIED IDEOGRAPH-5DF1}) missing from current font.
+36.5s 336 plt.tight_layout()
+36.5s 337 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 12458 (\N{KATAKANA LETTER O}) missing from current font.
+36.5s 338 plt.tight_layout()
+36.5s 339 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 12531 (\N{KATAKANA LETTER N}) missing from current font.
+36.5s 340 plt.tight_layout()
+36.5s 341 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 12521 (\N{KATAKANA LETTER RA}) missing from current font.
+36.5s 342 plt.tight_layout()
+36.5s 343 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 12452 (\N{KATAKANA LETTER I}) missing from current font.
+36.5s 344 plt.tight_layout()
+36.5s 345 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 12471 (\N{KATAKANA LETTER SI}) missing from current font.
+36.5s 346 plt.tight_layout()
+36.5s 347 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 12519 (\N{KATAKANA LETTER SMALL YO}) missing from current font.
+36.5s 348 plt.tight_layout()
+36.5s 349 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 12483 (\N{KATAKANA LETTER SMALL TU}) missing from current font.
+36.5s 350 plt.tight_layout()
+36.5s 351 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 12503 (\N{KATAKANA LETTER PU}) missing from current font.
+36.5s 352 plt.tight_layout()
+36.5s 353 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 3585 (\N{THAI CHARACTER KO KAI}) missing from current font.
+36.5s 354 plt.tight_layout()
+36.5s 355 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 3641 (\N{THAI CHARACTER SARA UU}) missing from current font.
+36.5s 356 plt.tight_layout()
+36.5s 357 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 3648 (\N{THAI CHARACTER SARA E}) missing from current font.
+36.5s 358 plt.tight_layout()
+36.5s 359 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 3636 (\N{THAI CHARACTER SARA I}) missing from current font.
+36.5s 360 plt.tight_layout()
+36.5s 361 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 3657 (\N{THAI CHARACTER MAI THO}) missing from current font.
+36.5s 362 plt.tight_layout()
+36.5s 363 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 3591 (\N{THAI CHARACTER NGO NGU}) missing from current font.
+36.5s 364 plt.tight_layout()
+36.5s 365 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 3618 (\N{THAI CHARACTER YO YAK}) missing from current font.
+36.5s 366 plt.tight_layout()
+36.5s 367 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 3607 (\N{THAI CHARACTER THO THAHAN}) missing from current font.
+36.5s 368 plt.tight_layout()
+36.5s 369 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 3640 (\N{THAI CHARACTER SARA U}) missing from current font.
+36.5s 370 plt.tight_layout()
+36.5s 371 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 3611 (\N{THAI CHARACTER PO PLA}) missing from current font.
+36.5s 372 plt.tight_layout()
+36.7s 373 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2453 (\N{BENGALI LETTER KA}) missing from current font.
+36.7s 374 plt.tight_layout()
+36.7s 375 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Matplotlib currently does not support Bengali natively.
+36.7s 376 plt.tight_layout()
+36.7s 377 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2495 (\N{BENGALI VOWEL SIGN I}) missing from current font.
+36.7s 378 plt.tight_layout()
+36.7s 379 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2477 (\N{BENGALI LETTER BHA}) missing from current font.
+36.7s 380 plt.tight_layout()
+36.7s 381 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2494 (\N{BENGALI VOWEL SIGN AA}) missing from current font.
+36.7s 382 plt.tight_layout()
+36.7s 383 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2476 (\N{BENGALI LETTER BA}) missing from current font.
+36.7s 384 plt.tight_layout()
+36.7s 385 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2503 (\N{BENGALI VOWEL SIGN E}) missing from current font.
+36.7s 386 plt.tight_layout()
+36.7s 387 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2438 (\N{BENGALI LETTER AA}) missing from current font.
+36.7s 388 plt.tight_layout()
+36.7s 389 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2478 (\N{BENGALI LETTER MA}) missing from current font.
+36.7s 390 plt.tight_layout()
+36.7s 391 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2480 (\N{BENGALI LETTER RA}) missing from current font.
+36.7s 392 plt.tight_layout()
+36.7s 393 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2527 (\N{BENGALI LETTER YYA}) missing from current font.
+36.7s 394 plt.tight_layout()
+36.7s 395 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2488 (\N{BENGALI LETTER SA}) missing from current font.
+36.7s 396 plt.tight_layout()
+36.7s 397 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2482 (\N{BENGALI LETTER LA}) missing from current font.
+36.7s 398 plt.tight_layout()
+36.7s 399 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Glyph 2479 (\N{BENGALI LETTER YA}) missing from current font.
+36.7s 400 plt.tight_layout()
+36.7s 401 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Tight layout not applied. The bottom and top margins cannot be made large enough to accommodate all axes decorations.
+36.7s 402 plt.tight_layout()
+37.8s 403 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2327 (\N{DEVANAGARI LETTER GA}) missing from current font.
+37.8s 404 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 405 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Matplotlib currently does not support Devanagari natively.
+37.8s 406 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 407 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2370 (\N{DEVANAGARI VOWEL SIGN UU}) missing from current font.
+37.8s 408 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 409 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2354 (\N{DEVANAGARI LETTER LA}) missing from current font.
+37.8s 410 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 411 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2350 (\N{DEVANAGARI LETTER MA}) missing from current font.
+37.8s 412 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 413 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2375 (\N{DEVANAGARI VOWEL SIGN E}) missing from current font.
+37.8s 414 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 415 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2306 (\N{DEVANAGARI SIGN ANUSVARA}) missing from current font.
+37.8s 416 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 417 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2360 (\N{DEVANAGARI LETTER SA}) missing from current font.
+37.8s 418 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 419 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 21830 (\N{CJK UNIFIED IDEOGRAPH-5546}) missing from current font.
+37.8s 420 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 421 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 24215 (\N{CJK UNIFIED IDEOGRAPH-5E97}) missing from current font.
+37.8s 422 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 423 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 23448 (\N{CJK UNIFIED IDEOGRAPH-5B98}) missing from current font.
+37.8s 424 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 425 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 32593 (\N{CJK UNIFIED IDEOGRAPH-7F51}) missing from current font.
+37.8s 426 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 427 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 32209 (\N{CJK UNIFIED IDEOGRAPH-7DD1}) missing from current font.
+37.8s 428 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 429 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 35895 (\N{CJK UNIFIED IDEOGRAPH-8C37}) missing from current font.
+37.8s 430 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 431 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 20986 (\N{CJK UNIFIED IDEOGRAPH-51FA}) missing from current font.
+37.8s 432 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 433 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 20037 (\N{CJK UNIFIED IDEOGRAPH-4E45}) missing from current font.
+37.8s 434 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 435 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 29190 (\N{CJK UNIFIED IDEOGRAPH-7206}) missing from current font.
+37.8s 436 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 437 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 35946 (\N{CJK UNIFIED IDEOGRAPH-8C6A}) missing from current font.
+37.8s 438 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 439 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 21213 (\N{CJK UNIFIED IDEOGRAPH-52DD}) missing from current font.
+37.8s 440 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 441 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 24049 (\N{CJK UNIFIED IDEOGRAPH-5DF1}) missing from current font.
+37.8s 442 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 443 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12458 (\N{KATAKANA LETTER O}) missing from current font.
+37.8s 444 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 445 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12531 (\N{KATAKANA LETTER N}) missing from current font.
+37.8s 446 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 447 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12521 (\N{KATAKANA LETTER RA}) missing from current font.
+37.8s 448 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 449 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12452 (\N{KATAKANA LETTER I}) missing from current font.
+37.8s 450 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 451 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12471 (\N{KATAKANA LETTER SI}) missing from current font.
+37.8s 452 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 453 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12519 (\N{KATAKANA LETTER SMALL YO}) missing from current font.
+37.8s 454 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 455 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12483 (\N{KATAKANA LETTER SMALL TU}) missing from current font.
+37.8s 456 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 457 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12503 (\N{KATAKANA LETTER PU}) missing from current font.
+37.8s 458 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 459 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3585 (\N{THAI CHARACTER KO KAI}) missing from current font.
+37.8s 460 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 461 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3641 (\N{THAI CHARACTER SARA UU}) missing from current font.
+37.8s 462 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 463 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3648 (\N{THAI CHARACTER SARA E}) missing from current font.
+37.8s 464 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 465 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3636 (\N{THAI CHARACTER SARA I}) missing from current font.
+37.8s 466 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 467 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3657 (\N{THAI CHARACTER MAI THO}) missing from current font.
+37.8s 468 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 469 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3591 (\N{THAI CHARACTER NGO NGU}) missing from current font.
+37.8s 470 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 471 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3618 (\N{THAI CHARACTER YO YAK}) missing from current font.
+37.8s 472 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 473 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3607 (\N{THAI CHARACTER THO THAHAN}) missing from current font.
+37.8s 474 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 475 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3640 (\N{THAI CHARACTER SARA U}) missing from current font.
+37.8s 476 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 477 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3611 (\N{THAI CHARACTER PO PLA}) missing from current font.
+37.8s 478 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 479 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2453 (\N{BENGALI LETTER KA}) missing from current font.
+37.8s 480 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 481 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Matplotlib currently does not support Bengali natively.
+37.8s 482 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 483 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2495 (\N{BENGALI VOWEL SIGN I}) missing from current font.
+37.8s 484 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 485 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2477 (\N{BENGALI LETTER BHA}) missing from current font.
+37.8s 486 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 487 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2494 (\N{BENGALI VOWEL SIGN AA}) missing from current font.
+37.8s 488 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 489 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2476 (\N{BENGALI LETTER BA}) missing from current font.
+37.8s 490 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 491 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2503 (\N{BENGALI VOWEL SIGN E}) missing from current font.
+37.8s 492 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 493 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2438 (\N{BENGALI LETTER AA}) missing from current font.
+37.8s 494 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 495 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2478 (\N{BENGALI LETTER MA}) missing from current font.
+37.8s 496 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 497 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2480 (\N{BENGALI LETTER RA}) missing from current font.
+37.8s 498 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 499 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2527 (\N{BENGALI LETTER YYA}) missing from current font.
+37.8s 500 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 501 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2488 (\N{BENGALI LETTER SA}) missing from current font.
+37.8s 502 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 503 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2482 (\N{BENGALI LETTER LA}) missing from current font.
+37.8s 504 fig.canvas.print_figure(bytes_io, **kw)
+37.8s 505 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2479 (\N{BENGALI LETTER YA}) missing from current font.
+37.8s 506 fig.canvas.print_figure(bytes_io, **kw)
+38.9s 507 Processing column: screenSize
+38.9s 508 Processing column: geoCluster
+39.1s 509 Processing column: trafficSource.adwordsClickInfo.slot
+39.3s 510 Processing column: device.mobileDeviceBranding
+39.5s 511 Processing column: device.mobileInputSelector
+39.7s 512 Processing column: trafficSource.campaign
+40.2s 513 Processing column: device.mobileDeviceMarketingName
+40.3s 514 Processing column: geoNetwork.networkDomain
+40.4s 515 Processing column: device.operatingSystemVersion
+40.6s 516 Processing column: device.flashVersion
+40.8s 517 Processing column: geoNetwork.region
+43.5s 518 Processing column: trafficSource
+44.6s 519 Processing column: geoNetwork.networkLocation
+44.7s 520 Processing column: os
+45.2s 521 Processing column: geoNetwork.subContinent
+45.5s 522 Processing column: trafficSource.medium
+45.7s 523 Processing column: trafficSource.adwordsClickInfo.isVideoAd
+45.9s 524 Processing column: browserMajor
+46.0s 525 Processing column: locationCountry
+47.4s 526 Processing column: device.browserSize
+47.5s 527 Processing column: trafficSource.adwordsClickInfo.adNetworkType
+47.7s 528 Processing column: socialEngagementType
+47.8s 529 Processing column: geoNetwork.city
+51.9s 530 Processing column: geoNetwork.metro
+52.6s 531 Processing column: device.mobileDeviceModel
+52.8s 532 Processing column: trafficSource.referralPath
+55.7s 533 /tmp/ipykernel_13/2845653949.py:13: UserWarning: Tight layout not applied. The bottom and top margins cannot be made large enough to accommodate all axes decorations.
+55.7s 534 plt.tight_layout()
+59.9s 535 Processing column: device.language
+60.0s 536 Processing column: deviceType
+60.2s 537 Processing column: userChannel
+60.3s 538 Processing column: device.browserVersion
+60.6s 539 Processing column: device.screenColors
+60.8s 540 Processing column: geoNetwork.continent
+61.8s 541 Processing column: userId
+62.2s 542 Processing column: gclIdPresent
+62.5s 543 Processing column: sessionNumber
+62.9s 544 Processing column: totals.visits
+63.3s 545 Processing column: sessionId
+63.5s 546 Processing column: trafficSource.adwordsClickInfo.page
+63.9s 547 Processing column: pageViews
+64.3s 548 Processing column: locationZone
+64.8s 549 Processing column: totals.bounces
+65.2s 550 Processing column: date
+65.5s 551 Processing column: totalHits
+65.8s 552 Processing column: sessionStart
+66.1s 553 Processing column: new_visits
+67.1s 554 Processing column: trafficSource.isTrueDirect
+67.4s 555 Processing column: browser
+67.9s 556 Processing column: device.screenResolution
+68.1s 557 Processing column: trafficSource.adContent
+68.9s 558 Processing column: trafficSource.keyword
+72.7s 559 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2327 (\N{DEVANAGARI LETTER GA}) missing from current font.
+72.7s 560 plt.tight_layout()
+72.7s 561 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Matplotlib currently does not support Devanagari natively.
+72.7s 562 plt.tight_layout()
+72.7s 563 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2370 (\N{DEVANAGARI VOWEL SIGN UU}) missing from current font.
+72.7s 564 plt.tight_layout()
+72.7s 565 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2354 (\N{DEVANAGARI LETTER LA}) missing from current font.
+72.7s 566 plt.tight_layout()
+72.7s 567 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2350 (\N{DEVANAGARI LETTER MA}) missing from current font.
+72.7s 568 plt.tight_layout()
+72.7s 569 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2375 (\N{DEVANAGARI VOWEL SIGN E}) missing from current font.
+72.7s 570 plt.tight_layout()
+72.7s 571 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2306 (\N{DEVANAGARI SIGN ANUSVARA}) missing from current font.
+72.7s 572 plt.tight_layout()
+72.7s 573 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2360 (\N{DEVANAGARI LETTER SA}) missing from current font.
+72.7s 574 plt.tight_layout()
+72.7s 575 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 21830 (\N{CJK UNIFIED IDEOGRAPH-5546}) missing from current font.
+72.7s 576 plt.tight_layout()
+72.7s 577 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 24215 (\N{CJK UNIFIED IDEOGRAPH-5E97}) missing from current font.
+72.7s 578 plt.tight_layout()
+72.7s 579 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 23448 (\N{CJK UNIFIED IDEOGRAPH-5B98}) missing from current font.
+72.7s 580 plt.tight_layout()
+72.7s 581 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 32593 (\N{CJK UNIFIED IDEOGRAPH-7F51}) missing from current font.
+72.7s 582 plt.tight_layout()
+72.7s 583 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 32209 (\N{CJK UNIFIED IDEOGRAPH-7DD1}) missing from current font.
+72.7s 584 plt.tight_layout()
+72.7s 585 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 35895 (\N{CJK UNIFIED IDEOGRAPH-8C37}) missing from current font.
+72.7s 586 plt.tight_layout()
+72.7s 587 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 20986 (\N{CJK UNIFIED IDEOGRAPH-51FA}) missing from current font.
+72.7s 588 plt.tight_layout()
+72.7s 589 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 20037 (\N{CJK UNIFIED IDEOGRAPH-4E45}) missing from current font.
+72.7s 590 plt.tight_layout()
+72.7s 591 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 29190 (\N{CJK UNIFIED IDEOGRAPH-7206}) missing from current font.
+72.7s 592 plt.tight_layout()
+72.7s 593 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 35946 (\N{CJK UNIFIED IDEOGRAPH-8C6A}) missing from current font.
+72.7s 594 plt.tight_layout()
+72.7s 595 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 21213 (\N{CJK UNIFIED IDEOGRAPH-52DD}) missing from current font.
+72.7s 596 plt.tight_layout()
+72.7s 597 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 24049 (\N{CJK UNIFIED IDEOGRAPH-5DF1}) missing from current font.
+72.7s 598 plt.tight_layout()
+72.7s 599 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 12458 (\N{KATAKANA LETTER O}) missing from current font.
+72.7s 600 plt.tight_layout()
+72.7s 601 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 12531 (\N{KATAKANA LETTER N}) missing from current font.
+72.7s 602 plt.tight_layout()
+72.7s 603 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 12521 (\N{KATAKANA LETTER RA}) missing from current font.
+72.7s 604 plt.tight_layout()
+72.7s 605 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 12452 (\N{KATAKANA LETTER I}) missing from current font.
+72.7s 606 plt.tight_layout()
+72.7s 607 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 12471 (\N{KATAKANA LETTER SI}) missing from current font.
+72.7s 608 plt.tight_layout()
+72.7s 609 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 12519 (\N{KATAKANA LETTER SMALL YO}) missing from current font.
+72.7s 610 plt.tight_layout()
+72.7s 611 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 12483 (\N{KATAKANA LETTER SMALL TU}) missing from current font.
+72.7s 612 plt.tight_layout()
+72.7s 613 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 12503 (\N{KATAKANA LETTER PU}) missing from current font.
+72.7s 614 plt.tight_layout()
+72.7s 615 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 3585 (\N{THAI CHARACTER KO KAI}) missing from current font.
+72.7s 616 plt.tight_layout()
+72.7s 617 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 3641 (\N{THAI CHARACTER SARA UU}) missing from current font.
+72.7s 618 plt.tight_layout()
+72.7s 619 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 3648 (\N{THAI CHARACTER SARA E}) missing from current font.
+72.7s 620 plt.tight_layout()
+72.7s 621 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 3636 (\N{THAI CHARACTER SARA I}) missing from current font.
+72.7s 622 plt.tight_layout()
+72.7s 623 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 3657 (\N{THAI CHARACTER MAI THO}) missing from current font.
+72.7s 624 plt.tight_layout()
+72.7s 625 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 3591 (\N{THAI CHARACTER NGO NGU}) missing from current font.
+72.7s 626 plt.tight_layout()
+72.7s 627 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 3618 (\N{THAI CHARACTER YO YAK}) missing from current font.
+72.7s 628 plt.tight_layout()
+72.7s 629 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 3607 (\N{THAI CHARACTER THO THAHAN}) missing from current font.
+72.7s 630 plt.tight_layout()
+72.7s 631 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 3640 (\N{THAI CHARACTER SARA U}) missing from current font.
+72.7s 632 plt.tight_layout()
+72.7s 633 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 3611 (\N{THAI CHARACTER PO PLA}) missing from current font.
+72.7s 634 plt.tight_layout()
+72.9s 635 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2453 (\N{BENGALI LETTER KA}) missing from current font.
+72.9s 636 plt.tight_layout()
+72.9s 637 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Matplotlib currently does not support Bengali natively.
+72.9s 638 plt.tight_layout()
+72.9s 639 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2495 (\N{BENGALI VOWEL SIGN I}) missing from current font.
+72.9s 640 plt.tight_layout()
+72.9s 641 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2477 (\N{BENGALI LETTER BHA}) missing from current font.
+72.9s 642 plt.tight_layout()
+72.9s 643 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2494 (\N{BENGALI VOWEL SIGN AA}) missing from current font.
+72.9s 644 plt.tight_layout()
+72.9s 645 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2476 (\N{BENGALI LETTER BA}) missing from current font.
+72.9s 646 plt.tight_layout()
+72.9s 647 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2503 (\N{BENGALI VOWEL SIGN E}) missing from current font.
+72.9s 648 plt.tight_layout()
+72.9s 649 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2438 (\N{BENGALI LETTER AA}) missing from current font.
+72.9s 650 plt.tight_layout()
+72.9s 651 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2478 (\N{BENGALI LETTER MA}) missing from current font.
+72.9s 652 plt.tight_layout()
+72.9s 653 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2480 (\N{BENGALI LETTER RA}) missing from current font.
+72.9s 654 plt.tight_layout()
+72.9s 655 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2527 (\N{BENGALI LETTER YYA}) missing from current font.
+72.9s 656 plt.tight_layout()
+72.9s 657 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2488 (\N{BENGALI LETTER SA}) missing from current font.
+72.9s 658 plt.tight_layout()
+72.9s 659 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2482 (\N{BENGALI LETTER LA}) missing from current font.
+72.9s 660 plt.tight_layout()
+72.9s 661 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Glyph 2479 (\N{BENGALI LETTER YA}) missing from current font.
+72.9s 662 plt.tight_layout()
+73.3s 663 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Tight layout not applied. The bottom and top margins cannot be made large enough to accommodate all axes decorations.
+73.3s 664 plt.tight_layout()
+74.3s 665 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2327 (\N{DEVANAGARI LETTER GA}) missing from current font.
+74.3s 666 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 667 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Matplotlib currently does not support Devanagari natively.
+74.3s 668 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 669 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2370 (\N{DEVANAGARI VOWEL SIGN UU}) missing from current font.
+74.3s 670 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 671 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2354 (\N{DEVANAGARI LETTER LA}) missing from current font.
+74.3s 672 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 673 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2350 (\N{DEVANAGARI LETTER MA}) missing from current font.
+74.3s 674 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 675 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2375 (\N{DEVANAGARI VOWEL SIGN E}) missing from current font.
+74.3s 676 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 677 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2306 (\N{DEVANAGARI SIGN ANUSVARA}) missing from current font.
+74.3s 678 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 679 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2360 (\N{DEVANAGARI LETTER SA}) missing from current font.
+74.3s 680 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 681 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 21830 (\N{CJK UNIFIED IDEOGRAPH-5546}) missing from current font.
+74.3s 682 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 683 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 24215 (\N{CJK UNIFIED IDEOGRAPH-5E97}) missing from current font.
+74.3s 684 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 685 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 23448 (\N{CJK UNIFIED IDEOGRAPH-5B98}) missing from current font.
+74.3s 686 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 687 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 32593 (\N{CJK UNIFIED IDEOGRAPH-7F51}) missing from current font.
+74.3s 688 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 689 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 32209 (\N{CJK UNIFIED IDEOGRAPH-7DD1}) missing from current font.
+74.3s 690 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 691 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 35895 (\N{CJK UNIFIED IDEOGRAPH-8C37}) missing from current font.
+74.3s 692 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 693 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 20986 (\N{CJK UNIFIED IDEOGRAPH-51FA}) missing from current font.
+74.3s 694 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 695 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 20037 (\N{CJK UNIFIED IDEOGRAPH-4E45}) missing from current font.
+74.3s 696 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 697 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 29190 (\N{CJK UNIFIED IDEOGRAPH-7206}) missing from current font.
+74.3s 698 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 699 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 35946 (\N{CJK UNIFIED IDEOGRAPH-8C6A}) missing from current font.
+74.3s 700 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 701 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 21213 (\N{CJK UNIFIED IDEOGRAPH-52DD}) missing from current font.
+74.3s 702 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 703 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 24049 (\N{CJK UNIFIED IDEOGRAPH-5DF1}) missing from current font.
+74.3s 704 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 705 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12458 (\N{KATAKANA LETTER O}) missing from current font.
+74.3s 706 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 707 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12531 (\N{KATAKANA LETTER N}) missing from current font.
+74.3s 708 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 709 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12521 (\N{KATAKANA LETTER RA}) missing from current font.
+74.3s 710 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 711 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12452 (\N{KATAKANA LETTER I}) missing from current font.
+74.3s 712 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 713 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12471 (\N{KATAKANA LETTER SI}) missing from current font.
+74.3s 714 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 715 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12519 (\N{KATAKANA LETTER SMALL YO}) missing from current font.
+74.3s 716 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 717 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12483 (\N{KATAKANA LETTER SMALL TU}) missing from current font.
+74.3s 718 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 719 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 12503 (\N{KATAKANA LETTER PU}) missing from current font.
+74.3s 720 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 721 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3585 (\N{THAI CHARACTER KO KAI}) missing from current font.
+74.3s 722 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 723 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3641 (\N{THAI CHARACTER SARA UU}) missing from current font.
+74.3s 724 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 725 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3648 (\N{THAI CHARACTER SARA E}) missing from current font.
+74.3s 726 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 727 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3636 (\N{THAI CHARACTER SARA I}) missing from current font.
+74.3s 728 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 729 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3657 (\N{THAI CHARACTER MAI THO}) missing from current font.
+74.3s 730 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 731 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3591 (\N{THAI CHARACTER NGO NGU}) missing from current font.
+74.3s 732 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 733 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3618 (\N{THAI CHARACTER YO YAK}) missing from current font.
+74.3s 734 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 735 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3607 (\N{THAI CHARACTER THO THAHAN}) missing from current font.
+74.3s 736 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 737 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3640 (\N{THAI CHARACTER SARA U}) missing from current font.
+74.3s 738 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 739 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 3611 (\N{THAI CHARACTER PO PLA}) missing from current font.
+74.3s 740 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 741 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2453 (\N{BENGALI LETTER KA}) missing from current font.
+74.3s 742 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 743 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Matplotlib currently does not support Bengali natively.
+74.3s 744 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 745 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2495 (\N{BENGALI VOWEL SIGN I}) missing from current font.
+74.3s 746 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 747 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2477 (\N{BENGALI LETTER BHA}) missing from current font.
+74.3s 748 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 749 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2494 (\N{BENGALI VOWEL SIGN AA}) missing from current font.
+74.3s 750 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 751 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2476 (\N{BENGALI LETTER BA}) missing from current font.
+74.3s 752 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 753 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2503 (\N{BENGALI VOWEL SIGN E}) missing from current font.
+74.3s 754 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 755 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2438 (\N{BENGALI LETTER AA}) missing from current font.
+74.3s 756 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 757 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2478 (\N{BENGALI LETTER MA}) missing from current font.
+74.3s 758 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 759 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2480 (\N{BENGALI LETTER RA}) missing from current font.
+74.3s 760 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 761 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2527 (\N{BENGALI LETTER YYA}) missing from current font.
+74.3s 762 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 763 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2488 (\N{BENGALI LETTER SA}) missing from current font.
+74.3s 764 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 765 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2482 (\N{BENGALI LETTER LA}) missing from current font.
+74.3s 766 fig.canvas.print_figure(bytes_io, **kw)
+74.3s 767 /usr/local/lib/python3.11/dist-packages/IPython/core/pylabtools.py:151: UserWarning: Glyph 2479 (\N{BENGALI LETTER YA}) missing from current font.
+74.3s 768 fig.canvas.print_figure(bytes_io, **kw)
+75.6s 769 Processing column: screenSize
+75.6s 770 Processing column: geoCluster
+76.0s 771 Processing column: trafficSource.adwordsClickInfo.slot
+76.0s 772 Processing column: device.mobileDeviceBranding
+76.5s 773 Processing column: device.mobileInputSelector
+76.7s 774 Processing column: trafficSource.campaign
+77.2s 775 Processing column: device.mobileDeviceMarketingName
+77.4s 776 Processing column: geoNetwork.networkDomain
+77.7s 777 Processing column: device.operatingSystemVersion
+77.9s 778 Processing column: device.flashVersion
+78.1s 779 Processing column: geoNetwork.region
+83.2s 780 Processing column: trafficSource
+85.4s 781 Processing column: geoNetwork.networkLocation
+85.7s 782 Processing column: os
+86.1s 783 Processing column: geoNetwork.subContinent
+86.5s 784 Processing column: trafficSource.medium
+86.8s 785 Processing column: trafficSource.adwordsClickInfo.isVideoAd
+86.8s 786 Processing column: browserMajor
+87.3s 787 Processing column: locationCountry
+90.1s 788 Processing column: device.browserSize
+90.4s 789 Processing column: trafficSource.adwordsClickInfo.adNetworkType
+90.4s 790 Processing column: socialEngagementType
+90.8s 791 Processing column: geoNetwork.city
+99.2s 792 Processing column: geoNetwork.metro
+100.4s 793 Processing column: device.mobileDeviceModel
+100.4s 794 Processing column: trafficSource.referralPath
+108.1s 795 /tmp/ipykernel_13/2341869725.py:15: UserWarning: Tight layout not applied. The bottom and top margins cannot be made large enough to accommodate all axes decorations.
+108.1s 796 plt.tight_layout()
+112.7s 797 Processing column: device.language
+112.9s 798 Processing column: deviceType
+113.1s 799 Processing column: userChannel
+113.4s 800 Processing column: device.browserVersion
+113.6s 801 Processing column: device.screenColors
+113.6s 802 Processing column: geoNetwork.continent
+115.7s 803 /usr/local/lib/python3.11/dist-packages/matplotlib/colors.py:721: RuntimeWarning: invalid value encountered in less
+115.7s 804 xa[xa < 0] = -1
+128.0s 805 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+128.0s 806 with pd.option_context('mode.use_inf_as_na', True):
+128.0s 807 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+128.0s 808 with pd.option_context('mode.use_inf_as_na', True):
+128.0s 809 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+128.0s 810 with pd.option_context('mode.use_inf_as_na', True):
+128.3s 811 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+128.3s 812 with pd.option_context('mode.use_inf_as_na', True):
+135.6s 813 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+135.6s 814 with pd.option_context('mode.use_inf_as_na', True):
+135.6s 815 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+135.6s 816 with pd.option_context('mode.use_inf_as_na', True):
+135.8s 817 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+135.8s 818 with pd.option_context('mode.use_inf_as_na', True):
+135.8s 819 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+135.8s 820 with pd.option_context('mode.use_inf_as_na', True):
+136.7s 821 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+136.7s 822 with pd.option_context('mode.use_inf_as_na', True):
+136.7s 823 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+136.7s 824 with pd.option_context('mode.use_inf_as_na', True):
+136.7s 825 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+136.7s 826 with pd.option_context('mode.use_inf_as_na', True):
+137.0s 827 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+137.0s 828 with pd.option_context('mode.use_inf_as_na', True):
+137.7s 829 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+137.7s 830 with pd.option_context('mode.use_inf_as_na', True):
+137.7s 831 /usr/local/lib/python3.11/dist-packages/seaborn/_oldcore.py:1119: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+137.7s 832 with pd.option_context('mode.use_inf_as_na', True):
+156.0s 833 /usr/local/lib/python3.11/dist-packages/seaborn/axisgrid.py:118: UserWarning: The figure layout has changed to tight
+156.0s 834 self._figure.tight_layout(*args, **kwargs)
+202.8s 835 False
+202.8s 836 {'purchaseValue'}
+202.8s 837 set()
+205.2s 838 (116023, 60)
+245.9s 839 (92818, 60)
+245.9s 840 /usr/local/lib/python3.11/dist-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+245.9s 841 warnings.warn(
+282.2s 842 /usr/local/lib/python3.11/dist-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+282.2s 843 warnings.warn(
+315.5s 844 /usr/local/lib/python3.11/dist-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+315.5s 845 warnings.warn(
+350.0s 846 /usr/local/lib/python3.11/dist-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+350.0s 847 warnings.warn(
+383.2s 848 /usr/local/lib/python3.11/dist-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+383.2s 849 warnings.warn(
+416.0s 850 /usr/local/lib/python3.11/dist-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+416.0s 851 warnings.warn(
+460.8s 852 /usr/local/lib/python3.11/dist-packages/sklearn/linear_model/_sag.py:350: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+460.8s 853 warnings.warn(
+461.5s 854 
+461.5s 855 Final Ridge Results
+461.5s 856 Val R2: 0.2702
+461.5s 857 CV R2: 0.2694
+461.5s 858 MAE: 2245.75
+461.5s 859 RMSE: 4109.83
+461.5s 860 Eval Time: 215.19 sec | 3.59 min
+462.0s 861 result saves successfully
+480.3s 862 
+480.3s 863 Final Lasso Results
+480.3s 864 Val R2: 0.3655
+480.3s 865 CV R2: 0.4012
+480.3s 866 MAE: 1734.73
+480.3s 867 RMSE: 3724.53
+480.3s 868 Eval Time: 15.22 sec | 0.25 min
+480.8s 869 result saves successfully
+483.8s 870 Total Time: 1.73 sec | 0.03 min
+498.8s 871 
+498.8s 872 Final ElasticNet Results
+498.8s 873 Val R2: 0.3104
+498.8s 874 CV R2: 0.313
+498.8s 875 MAE: 2129.68
+498.8s 876 RMSE: 3990.45
+498.8s 877 Eval Time: 14.05 sec | 0.23 min
+499.2s 878 result saves successfully
+529.2s 879 
+529.2s 880 Final DecisionTreeRegressor Results
+529.2s 881 Val R2: 0.4233
+529.2s 882 CV R2: 0.4785
+529.2s 883 MAE: 687.35
+529.2s 884 RMSE: 2212.13
+529.2s 885 Eval Time: 24.93 sec | 0.42 min
+529.6s 886 result saves successfully
+551.1s 887 Time: 19.45 seconds | 0.32 minutes
+680.7s 888 
+680.7s 889 Final RandomForestRegressor Results
+680.7s 890 Val R2: 0.3645
+680.7s 891 CV R2: 0.4882
+680.7s 892 MAE: 6125714.35
+680.7s 893 RMSE: 46863260.37
+680.7s 894 Eval Time: 128.52 sec | 2.14 min
+681.2s 895 result saves successfully
+686.0s 896 /usr/local/lib/python3.11/dist-packages/xgboost/core.py:160: UserWarning: [11:12:09] WARNING: /workspace/src/context.cc:44: No visible GPU is found, setting device to CPU.
+686.0s 897 warnings.warn(smsg, UserWarning)
+890.1s 898 Total Time: 205.98 sec | 3.43 minutes
+909.3s 899 0.6812389117394895
+912.2s 900 /usr/local/lib/python3.11/dist-packages/xgboost/core.py:160: UserWarning: [11:15:55] WARNING: /workspace/src/context.cc:44: No visible GPU is found, setting device to CPU.
+912.2s 901 warnings.warn(smsg, UserWarning)
+1131.7s 902 /usr/local/lib/python3.11/dist-packages/xgboost/core.py:160: UserWarning: [11:19:34] WARNING: /workspace/src/context.cc:44: No visible GPU is found, setting device to CPU.
+1131.7s 903 warnings.warn(smsg, UserWarning)
+1359.0s 904 /usr/local/lib/python3.11/dist-packages/xgboost/core.py:160: UserWarning: [11:23:21] WARNING: /workspace/src/context.cc:44: No visible GPU is found, setting device to CPU.
+1359.0s 905 warnings.warn(smsg, UserWarning)
+1572.4s 906 /usr/local/lib/python3.11/dist-packages/xgboost/core.py:160: UserWarning: [11:26:55] WARNING: /workspace/src/context.cc:44: No visible GPU is found, setting device to CPU.
+1572.4s 907 warnings.warn(smsg, UserWarning)
+1839.5s 908 /usr/local/lib/python3.11/dist-packages/xgboost/core.py:160: UserWarning: [11:31:22] WARNING: /workspace/src/context.cc:44: No visible GPU is found, setting device to CPU.
+1839.5s 909 warnings.warn(smsg, UserWarning)
+2054.7s 910 /usr/local/lib/python3.11/dist-packages/xgboost/core.py:160: UserWarning: [11:34:57] WARNING: /workspace/src/context.cc:44: No visible GPU is found, setting device to CPU.
+2054.7s 911 warnings.warn(smsg, UserWarning)
+2370.7s 912 
+2370.7s 913 Final XGBRegressor Results
+2370.7s 914 Val R2: 0.6812
+2370.7s 915 CV R2: 0.701
+2370.7s 916 MAE: 1.71
+2370.7s 917 RMSE: 38.18
+2370.7s 918 Eval Time: 1479.42 sec | 24.66 min
+2371.2s 919 result saves successfully
+2403.0s 920 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+2403.0s 921 warn(
+2403.1s 922 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+2403.9s 923 [NbConvertApp] Writing 13794845 bytes to __notebook__.ipynb
+2405.4s 924 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+2405.4s 925 warn(
+2405.5s 926 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+2406.8s 927 [NbConvertApp] Support files will be in __results___files/
+2406.8s 928 [NbConvertApp] Making directory __results___files
+2406.8s 929 [NbConvertApp] Making directory __results___files
+2406.8s 930 [NbConvertApp] Making directory __results___files
+2406.8s 931 [NbConvertApp] Making directory __results___files
+2406.8s 932 [NbConvertApp] Making directory __results___files
+2406.8s 933 [NbConvertApp] Making directory __results___files
+2406.8s 934 [NbConvertApp] Making directory __results___files
+2406.8s 935 [NbConvertApp] Making directory __results___files
+2406.8s 936 [NbConvertApp] Making directory __results___files
+2406.8s 937 [NbConvertApp] Making directory __results___files
+2406.8s 938 [NbConvertApp] Making directory __results___files
+2406.8s 939 [NbConvertApp] Making directory __results___files
+2406.8s 940 [NbConvertApp] Making directory __results___files
+2406.8s 941 [NbConvertApp] Making directory __results___files
+2406.8s 942 [NbConvertApp] Making directory __results___files
+2406.8s 943 [NbConvertApp] Making directory __results___files
+2406.8s 944 [NbConvertApp] Making directory __results___files
+2406.8s 945 [NbConvertApp] Making directory __results___files
+2406.8s 946 [NbConvertApp] Making directory __results___files
+2406.8s 947 [NbConvertApp] Making directory __results___files
+2406.8s 948 [NbConvertApp] Making directory __results___files
+2406.8s 949 [NbConvertApp] Making directory __results___files
+2406.8s 950 [NbConvertApp] Making directory __results___files
+2406.8s 951 [NbConvertApp] Making directory __results___files
+2406.8s 952 [NbConvertApp] Making directory __results___files
+2406.8s 953 [NbConvertApp] Making directory __results___files
+2406.8s 954 [NbConvertApp] Making directory __results___files
+2406.8s 955 [NbConvertApp] Making directory __results___files
+2406.8s 956 [NbConvertApp] Making directory __results___files
+2406.8s 957 [NbConvertApp] Making directory __results___files
+2406.8s 958 [NbConvertApp] Making directory __results___files
+2406.8s 959 [NbConvertApp] Making directory __results___files
+2406.8s 960 [NbConvertApp] Making directory __results___files
+2406.8s 961 [NbConvertApp] Making directory __results___files
+2406.8s 962 [NbConvertApp] Making directory __results___files
+2406.8s 963 [NbConvertApp] Making directory __results___files
+2406.8s 964 [NbConvertApp] Making directory __results___files
+2406.8s 965 [NbConvertApp] Making directory __results___files
+2406.8s 966 [NbConvertApp] Making directory __results___files
+2406.8s 967 [NbConvertApp] Making directory __results___files
+2406.8s 968 [NbConvertApp] Making directory __results___files
+2406.8s 969 [NbConvertApp] Making directory __results___files
+2406.8s 970 [NbConvertApp] Making directory __results___files
+2406.8s 971 [NbConvertApp] Making directory __results___files
+2406.8s 972 [NbConvertApp] Making directory __results___files
+2406.8s 973 [NbConvertApp] Making directory __results___files
+2406.8s 974 [NbConvertApp] Making directory __results___files
+2406.8s 975 [NbConvertApp] Making directory __results___files
+2406.8s 976 [NbConvertApp] Making directory __results___files
+2406.8s 977 [NbConvertApp] Making directory __results___files
+2406.8s 978 [NbConvertApp] Making directory __results___files
+2406.8s 979 [NbConvertApp] Making directory __results___files
+2406.8s 980 [NbConvertApp] Making directory __results___files
+2406.8s 981 [NbConvertApp] Making directory __results___files
+2406.8s 982 [NbConvertApp] Making directory __results___files
+2406.8s 983 [NbConvertApp] Making directory __results___files
+2406.8s 984 [NbConvertApp] Making directory __results___files
+2406.8s 985 [NbConvertApp] Making directory __results___files
+2406.8s 986 [NbConvertApp] Making directory __results___files
+2406.8s 987 [NbConvertApp] Making directory __results___files
+2406.8s 988 [NbConvertApp] Making directory __results___files
+2406.8s 989 [NbConvertApp] Making directory __results___files
+2406.8s 990 [NbConvertApp] Making directory __results___files
+2406.8s 991 [NbConvertApp] Making directory __results___files
+2406.8s 992 [NbConvertApp] Making directory __results___files
+2406.8s 993 [NbConvertApp] Making directory __results___files
+2406.8s 994 [NbConvertApp] Making directory __results___files
+2406.8s 995 [NbConvertApp] Making directory __results___files
+2406.8s 996 [NbConvertApp] Making directory __results___files
+2406.8s 997 [NbConvertApp] Making directory __results___files
+2406.8s 998 [NbConvertApp] Making directory __results___files
+2406.8s 999 [NbConvertApp] Making directory __results___files
+2406.8s 1000 [NbConvertApp] Making directory __results___files
+2406.8s 1001 [NbConvertApp] Making directory __results___files
+2406.8s 1002 [NbConvertApp] Making directory __results___files
+2406.8s 1003 [NbConvertApp] Making directory __results___files
+2406.8s 1004 [NbConvertApp] Making directory __results___files
+2406.8s 1005 [NbConvertApp] Making directory __results___files
+2406.8s 1006 [NbConvertApp] Making directory __results___files
+2406.8s 1007 [NbConvertApp] Making directory __results___files
+2406.8s 1008 [NbConvertApp] Making directory __results___files
+2406.8s 1009 [NbConvertApp] Making directory __results___files
+2406.8s 1010 [NbConvertApp] Making directory __results___files
+2406.8s 1011 [NbConvertApp] Making directory __results___files
+2406.8s 1012 [NbConvertApp] Making directory __results___files
+2406.8s 1013 [NbConvertApp] Making directory __results___files
+2406.8s 1014 [NbConvertApp] Making directory __results___files
+2406.8s 1015 [NbConvertApp] Making directory __results___files
+2406.8s 1016 [NbConvertApp] Making directory __results___files
+2406.8s 1017 [NbConvertApp] Making directory __results___files
+2406.8s 1018 [NbConvertApp] Making directory __results___files
+2406.8s 1019 [NbConvertApp] Making directory __results___files
+2406.8s 1020 [NbConvertApp] Making directory __results___files
+2406.8s 1021 [NbConvertApp] Making directory __results___files
+2406.8s 1022 [NbConvertApp] Making directory __results___files
+2406.8s 1023 [NbConvertApp] Making directory __results___files
+2406.8s 1024 [NbConvertApp] Making directory __results___files
+2406.8s 1025 [NbConvertApp] Making directory __results___files
+2406.8s 1026 [NbConvertApp] Making directory __results___files
+2406.8s 1027 [NbConvertApp] Making directory __results___files
+2406.8s 1028 [NbConvertApp] Making directory __results___files
+2406.8s 1029 [NbConvertApp] Making directory __results___files
+2406.8s 1030 [NbConvertApp] Making directory __results___files
+2406.8s 1031 [NbConvertApp] Making directory __results___files
+2406.8s 1032 [NbConvertApp] Making directory __results___files
+2406.8s 1033 [NbConvertApp] Making directory __results___files
+2406.8s 1034 [NbConvertApp] Making directory __results___files
+2406.8s 1035 [NbConvertApp] Making directory __results___files
+2406.8s 1036 [NbConvertApp] Making directory __results___files
+2406.8s 1037 [NbConvertApp] Making directory __results___files
+2406.8s 1038 [NbConvertApp] Making directory __results___files
+2406.8s 1039 [NbConvertApp] Making directory __results___files
+2406.8s 1040 [NbConvertApp] Making directory __results___files
+2406.8s 1041 [NbConvertApp] Making directory __results___files
+2406.8s 1042 [NbConvertApp] Making directory __results___files
+2406.8s 1043 [NbConvertApp] Making directory __results___files
+2406.8s 1044 [NbConvertApp] Making directory __results___files
+2406.8s 1045 [NbConvertApp] Making directory __results___files
+2406.8s 1046 [NbConvertApp] Making directory __results___files
+2406.8s 1047 [NbConvertApp] Writing 566442 bytes to __results__.html
